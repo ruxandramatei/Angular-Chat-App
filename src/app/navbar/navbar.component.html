@@ -1,0 +1,37 @@
+<div class="navBar">
+  <div id="logo"></div>
+  <div id="heading">
+    <a routerLink="/">chat</a>
+  </div>
+  <div class="links">
+    <span>
+      <a *ngIf="!(userTemp|async)?.uid" href="#" (click)="login()">Login</a>
+    </span>
+
+    <span>
+      <a *ngIf="!(userTemp|async)?.uid" routerLink="/signup">Sign Up</a>
+    </span>
+
+    <span *ngIf="(userTemp|async)?.uid">
+        <img [src]="this.userPhotoUrl " class="img-circle">
+  
+      </span>
+
+    <span>
+
+      <span id="userEmail" *ngIf="(userTemp|async)?.uid">Hello, {{username}}</span>
+    </span>
+
+    <span>
+      <a *ngIf="(userTemp|async)?.uid" [routerLink]="['/chat']">Chat Room</a>
+    </span>
+
+    <span>
+      <a *ngIf="(userTemp|async)?.uid" [routerLink]="['/user', user.uid]">Profile Settings</a>
+    </span>
+
+    <span>
+      <a *ngIf="(userTemp|async)?.uid" href="#" (click)="authService.logout()">Logout</a>
+    </span>
+  </div>
+</div>

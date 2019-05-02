@@ -1,0 +1,18 @@
+<div class="messageContainer" [ngClass]="{'isOwnMessageContainer': isOwnMessage}">
+  <div>
+    <img [src]="this.photoUrl" class="img-circle">
+  </div>
+  <div class="messageData" [ngClass]="{'isOwnMessageData': isOwnMessage}">
+
+    <span class="timestamp" [ngClass]="{'isOwnTimestamp': isOwnMessage}">
+      {{ timeStamp }}
+    </span>
+  </div>
+  <div class="messageContent" [ngClass]="{'isOwnMessageContent': isOwnMessage}">
+    <span class="sender" [ngClass]="{'isOwnMessageSender': isOwnMessage}">
+      {{ userName }}
+    </span>
+    {{ messageContent }}
+  </div>
+
+</div>

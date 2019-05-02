@@ -1,0 +1,6 @@
+<div>
+  <ng-container *ngFor="let user of users">
+    <app-user-item [user]=user [userNameInput] = user.displayName *ngIf = "user.status==='online'">
+    </app-user-item>
+  </ng-container>
+</div>

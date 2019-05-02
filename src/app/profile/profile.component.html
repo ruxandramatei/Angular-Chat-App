@@ -1,0 +1,48 @@
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<div class="container">
+  <div class="signUpCard">
+
+    <form #profileSettingsForm="ngForm">
+      <h2 class="heading">Profile Settings</h2>
+    
+      <div class="form-group">
+        <h5>Select image:</h5>
+        <input #imageLoaded type="file" accept=".png, .jpg" (change)="onUpload($event)">
+      </div>
+      <input #imageUser type="hidden" [value]="urlImage | async">
+      <div>
+        <img [src]="this.photoUrl " class="img-circle">
+      </div>
+
+      <label class="label">Display Name</label>
+      <input name="displayName" value = {{this.username}} (keyup)="onKey($event)"
+          [(ngModel)]="displayName" class="formInput" maxlength="12" />
+
+      <label class="label">New password</label>
+      <input type="password" name="newPassword"  
+          [(ngModel)]="newPassword" class="formInput" required/>
+  
+      <label class="label">Confirm new password</label>
+      <input type="password" name="confirmPassword"  
+          [(ngModel)]="confirmPassword" class="formInput" required/>
+
+      <label class="label">Old password</label>
+      <input type="password" name="oldPassword"
+          [(ngModel)]="oldPassword" class="formInput" required/>
+    </form>
+    
+    <button type="submit" 
+      class="btn" id="btn-signUp" (click) = "goBack()" routerLink="/chat">
+      Go Back
+    </button>
+
+    <div class="divider"></div>
+
+    <input type="submit" name="Save Changes" value="Save Changes" [disabled]="!profileSettingsForm.form.valid" 
+      class="btn" id="btn-signUp" 
+      (click) = "saveChanges()" onclick="this.disabled=true; this.value='Changes saved';" />
+
+    <!-- <input type="submit" name="Submit" value="Submit" onclick="this.disabled=true; this.value='Please Wait...';" /> -->
+
+  </div>
+</div>
