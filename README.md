@@ -7,19 +7,19 @@ This repository is the source code of my angular chat app hosted here: (https://
 
 Sign Up:
 
-![alt.text](https://github.com/ruxandramatei/Angular-Chat-App/blob/master/Preview/Sign%20Up.png | width=400)
+![alt text](https://github.com/ruxandramatei/Angular-Chat-App/blob/master/Preview/Sign%20Up.png |width=400)
 
 Login:
 
-![alt.text](https://github.com/ruxandramatei/Angular-Chat-App/blob/master/Preview/Login.png |width=400)
+![alt text](https://github.com/ruxandramatei/Angular-Chat-App/blob/master/Preview/Login.png |width=400)
 
 Profile Settings:
 
- ![alt.text](https://github.com/ruxandramatei/Angular-Chat-App/blob/master/Preview/Profile%20Settings.png |width=400)
+ ![alt text](https://github.com/ruxandramatei/Angular-Chat-App/blob/master/Preview/Profile%20Settings.png |width=400)
  
  Chat Room:
  
- ![alt.text](https://github.com/ruxandramatei/Angular-Chat-App/blob/master/Preview/Chat%20Room.png |width=400)
+ ![alt text](https://github.com/ruxandramatei/Angular-Chat-App/blob/master/Preview/Chat%20Room.png |width=400)
  
 
 
