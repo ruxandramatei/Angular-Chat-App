@@ -1,7 +1,7 @@
 # ChatApp
 
 ## Overview
-This is the source code of my angular chat app: (https://ruxandramatei.github.io).
+This is the source code of my angular chat app: https://ruxandramatei.github.io
 
 ## Preview
 
